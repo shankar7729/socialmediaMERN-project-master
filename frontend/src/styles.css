@@ -20,7 +20,7 @@
 
 body{
   margin:0;
-  background: var(--bg-radial), var(--bg);
+  background: #FFFBEB;
   color:#000; /* black text */
   min-height:100vh;
   -webkit-font-smoothing: antialiased;
@@ -34,10 +34,11 @@ body{
   position:sticky;
   top:0;
   backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.95);
+  background: rgba(177, 242, 121, 0.6);
   border-bottom:1px solid rgba(0,0,0,0.08);
   box-shadow: var(--shadow-1);
   z-index:50;
+  margin-top: 10px;
 }
 
 .brand{
@@ -78,11 +79,11 @@ body{
   color:#000;
   text-decoration:none;
   padding:10px 14px;
-  border-radius:8px;
+  border-radius:15px;
   transition:.2s;
 }
 .navlinks a:hover{
-  background:rgba(0,0,0,0.05);
+  background:rgba(1,0,0,0.05);
 }
 
 .container{
@@ -105,7 +106,7 @@ body{
 }
 
 .card{
-  background:var(--card);
+  background:#FFFBEB;
   border:1px solid rgba(0,0,0,0.08);
   padding:18px;
   border-radius:12px;
@@ -114,6 +115,11 @@ body{
   transition:.25s;
   color:#000;
 }
+
+.card input{
+  background:#FFFBEB;
+}
+
 .card:hover{
   border-color: rgba(0,0,0,0.12);
 }

@@ -9,6 +9,7 @@ const postRoutes = require('./routes/posts');
 
 const app = express();
 
+
 // Middleware
 app.use(cors());
 app.use(express.json()); // Parse JSON requests
@@ -22,7 +23,7 @@ app.use('/api/posts', postRoutes);
 const PORT =5000;
 
 // Connect to MongoDB and start server
-mongoose.connect("mongodb+srv://sha:sha@cluster0.btz599l.mongodb.net/")
+mongoose.connect("mongodb+srv://gowrishankar7729_db_user:finalproject@cluster0.w8benpl.mongodb.net/")
   .then(() => {
     console.log('MongoDB connected');
     app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));

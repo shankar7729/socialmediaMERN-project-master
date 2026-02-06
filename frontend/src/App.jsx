@@ -6,7 +6,6 @@ import Register from './components/Auth/Register';
 import CreatePost from './components/CreatePost';
 import Profile from './components/Profile';
 import Users from './components/Users';
-
 export default function App() {
   const nav = useNavigate();
   const token = localStorage.getItem('token');
@@ -17,7 +16,7 @@ export default function App() {
   return (
     <div>
       <header className="topbar">
-        <div className="brand" onClick={() => nav('/')}>⚡️ SocialMERN</div>
+        <div className="brand" onClick={() => nav('/')}>Instagram-Clone</div>
 
         {/* Search */}
         <div className="searchwrap">
