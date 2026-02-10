@@ -23,7 +23,7 @@ app.use('/api/posts', postRoutes);
 const PORT =5000;
 
 // Connect to MongoDB and start server
-mongoose.connect("mongodb+srv://gowrishankar7729_db_user:finalproject@cluster0.w8benpl.mongodb.net/")
+mongoose.connect("mongodb+srv://gowrishankar7729_db_user:<finalproject>@cluster0.w8benpl.mongodb.net/")
   .then(() => {
     console.log('MongoDB connected');
     app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
